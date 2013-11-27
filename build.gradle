@@ -1,0 +1,34 @@
+apply plugin: "idea"
+
+apply plugin: "java"
+
+group = "com.experian.hadoop"
+version = "1.0"
+
+repositories {
+    // Standard Maven 
+    mavenCentral()
+    maven {
+        url "https://repository.cloudera.com/artifactory/cloudera-repos/"
+    }
+}
+
+configurations {
+    provided
+}
+
+sourceSets {
+    main.compileClasspath += configurations.provided
+    test.compileClasspath += configurations.provided
+    test.runtimeClasspath += configurations.provided
+}
+
+dependencies {
+    compile "org.apache.hadoop:hadoop-client:2.0.0-mr1-cdh4.0.1"
+    testCompile "junit:junit:4.8.2"
+    testCompile "org.hamcrest:hamcrest-core:1.2.1"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.8'
+}

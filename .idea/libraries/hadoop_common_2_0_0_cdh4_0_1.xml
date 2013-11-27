@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="hadoop-common-2.0.0-cdh4.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.apache.hadoop/hadoop-common/2.0.0-cdh4.0.1/jar/c060258425249ddceeb866d73ec3e8bc888b160c/hadoop-common-2.0.0-cdh4.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.apache.hadoop/hadoop-common/2.0.0-cdh4.0.1/source/404bdb3f31df6c6f3df4b271d085393bb211a6bb/hadoop-common-2.0.0-cdh4.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
